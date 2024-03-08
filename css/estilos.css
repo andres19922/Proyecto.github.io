@@ -1,0 +1,273 @@
+/*Importando hojas de estilo*/
+@import 'normalize.css';
+@import 'materialize.min.css';
+@import 'material-design-iconic-font.min.css';
+
+/*Tipografia*/
+@font-face{
+    font-family: "Tittles";
+    src: url("../fonts/goodtime.ttf"), 
+    url("../fonts/goodtime.eot"), 
+    url("../fonts/goodtime.woff"), 
+    url("../fonts/goodtime.woff2"), 
+    url("../fonts/goodtime.svg");
+}
+@font-face{
+    font-family: "Text";
+    src: url("../fonts/sourcesanspro.ttf"), 
+    url("../fonts/sourcesanspro.eot"), 
+    url("../fonts/sourcesanspro.woff"), 
+    url("../fonts/sourcesanspro.woff2"), 
+    url("../fonts/sourcesanspro.svg");
+}
+/*=====================================================
+					Estilos generales
+======================================================*/
+
+
+
+html{
+/*	font-family: "Trebuchet MS";*/
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #ecf0f1;
+}
+body{
+	background-color: #fafafa;
+	padding: 0px;
+	margin: 0px;
+}
+.header{
+	min-height: 80%;
+	padding: 30px 0;
+}
+a{
+	color: #4a4a4a;
+	font-weight: bolder;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+.full{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+header a{
+	width: 50px;
+
+	left: 90%;
+	display: inline-block;
+	vertical-align: top;
+	position: fixed;
+	z-index: 2;
+	background-color: #4a4a4a;
+
+}
+header a img{
+	width: 100%;
+}
+section{
+	width: 80%;
+	min-height: 500px;
+	padding: 2%;
+	margin:0 auto;
+	margin-left: 10%;
+	margin-top: 50px;
+}
+fieldset{
+	border:none;
+}
+.tittles{
+	font-family: "Tittles";
+	color: #414449;
+}
+/*====== Barra de navegacion*/
+.NavBar{
+	height: 50px;
+	position: relative;
+	background-color: #071011;   
+	line-height: 50px;
+	box-shadow: none;
+	transition: all .3s ease-in-out;
+}
+.NavBar-logo{
+	height: 50px;
+	line-height: 50px;
+	font-size: 19px;
+	text-align: center;
+	color: #fff;
+}
+.NavBar-links{
+	text-align: right;
+	padding: 0 0 !important;
+}
+.NavBar-links li{
+	display: inline-block;
+	height: 50px;
+	float: none;
+	color: #fff;
+}
+.NavBar-links li a{
+	height: 50px;
+	color: #fff;
+	line-height: 50px;
+}
+
+.producto{
+	width: 20%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 1%;
+	margin-top: 1%;
+	color: #4a4a4a;
+	font-weight: bolder;
+	font-size: 1.2rem;
+	padding: 1%;
+	-webkit-box-shadow: 0px 0px 10px rgba(240, 240, 240, 0.75);
+	-moz-box-shadow:    0px 0px 10px rgba(240, 240, 240, 0.75);
+	box-shadow:         0px 0px 10px rgba(240, 240, 240, 0.75);
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+}
+
+
+.producto img{
+	width: 200px;
+	height: 200px;
+	margin:0 auto;
+	-webkit-box-shadow: 0px 0px 10px rgba(74, 74, 74, 0.75);
+	-moz-box-shadow:    0px 0px 10px rgba(74, 74, 74, 0.75);
+	box-shadow:         0px 0px 10px rgba(74, 74, 74, 0.75);
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+}
+
+.producto a{
+	background-color: #071011;
+	padding: 3px;
+	color: white;
+	width: 50%;
+	padding-left: 20px;
+	padding-right: 20px;
+         padding-bottom: 5px;
+        padding-top: 5px;
+	border-radius: 4px;
+}
+.detalle a{
+        background-color: #071011;
+	padding: 2px;
+	color: white;
+	padding-left: 40px;
+	padding-right: 40px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+	border-radius: 4px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+       
+}
+.tabla{
+    float: left;
+    text-align: left;
+    font-family:"Text";
+    font-size: 20px;    
+    width: 40%;
+    margin-left: 10%;
+    
+    
+}
+
+
+
+.derecha{
+    float: right;
+    width: 40%;
+    text-align: right;
+    margin-right: 10%;
+    
+    
+}
+
+
+nav {
+  width  : 35%;
+  position: absolute;
+  z-index: 3;
+  right:0px;
+  top:.5%;
+}
+
+
+menu:after , menu:before {
+  display : block;
+  content : ' ';
+}
+
+menu:after {
+  clear : both;
+}
+
+li {
+  list-style-type : none;
+  float   : left;
+  cursor  : pointer;
+  padding : 3px 10px;
+
+
+}
+
+li:first-child {
+  border-radius : 5px 0 0 5px;
+}
+
+li:last-child {
+  border-radius : 0 5px 5px 0;
+}
+
+li a {
+  display : block;
+  padding : 10px 13px;
+  font-size : 26px;
+  text-decoration : none;
+  border-radius   : 5px;
+  position        : relative;
+  top   : 0;
+  color : #FFF;			
+  transition : all .4s;
+}
+
+
+
+a.fun {
+  display : none;
+}
+
+#formulario{
+	width: 50%;
+	height: auto;
+	margin:0 auto;
+}
+
+.footer{
+	padding: 30px 0;
+	background-color: #071011;
+	color: #fff;
+        width: 100%;
+        height: 10%;
+}
+.footer a{
+	color: #fff;
+        font-size: 20px;
+       
+}
+.footer-copyright{
+	text-align: center;
+	color: #fff;
+	border-top:1px solid rgba(255,255,255,.2);
+        height: 10%;
+}
